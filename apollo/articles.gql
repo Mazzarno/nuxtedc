@@ -1,0 +1,26 @@
+query articlesQuery {
+  articles {
+    id
+    Titre
+    Auteur
+    Avatar {
+      url
+    }
+    Description
+    Contenue1
+    Media_contenu {
+      url
+    }
+    Contenu2
+    Media_contenu2 {
+      url
+    }
+    Contenu3
+    Publication
+    URL_YT
+    categories {
+      id
+      Nom
+    }
+  }
+}

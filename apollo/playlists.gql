@@ -1,0 +1,12 @@
+query Playlist {
+  playlists {
+    id
+    Nom
+    videos {
+      id
+      Titre
+      Description
+      URL
+    }
+  }
+}
