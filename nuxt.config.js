@@ -83,6 +83,7 @@ export default {
     "@nuxtjs/markdownit",
     "@nuxtjs/robots",
     "@nuxtjs/sitemap",
+    "@nuxtjs/google-analytics",
   ],
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
@@ -128,7 +129,9 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
-
+  googleAnalytics: {
+    id: "UA-141781775-3",
+  },
   robots: {
     UserAgent: "*",
     Allow: "/",
