@@ -330,9 +330,7 @@
           <h1 class="headline my-5 primary--text">NOTRE VIDÉOTHÈQUE</h1>
         </v-col>
       </v-row>
-      {{ articles[0].Titre }}
       <VideosList class="mb-5"></VideosList>
-
       <v-row class="align-center my-5 d-flex justify-center">
         <v-col cols="12" md="6">
           <nuxt-link to="/videotheque">

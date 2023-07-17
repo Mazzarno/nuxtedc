@@ -8,9 +8,9 @@
         <p class="body-1">Nom du site : www.echappee-copro.org</p>
         <p class="body-1">Email : contact@echappee-copro.org</p>
         <p class="body-1">Directrice de publication : Manon LEROY</p>
-        <p class="body-1">Adresse : 4 Avenue de Saint Germain</p>
+        <p class="body-1">Adresse : 6 RUE DES DAIMS</p>
         <p class="body-1">31000 TOULOUSE</p>
-        <p class="body-1">Crédits photographiques : https://unsplash.com/</p>
+
 
         <h1 class="display-1 my-5 primary--text">Hébergerment</h1>
         <p class="body-1">
