@@ -8,12 +8,16 @@
 
     <v-row class="justify-center align-center">
       <v-col cols="12">
+        <h1 class="headline primary--text">Les dernières vidéos</h1>
+      </v-col>
+    </v-row>
+    <VideosList class="mb-5" :videos="playlists[1].videos"></VideosList>
+    <v-row class="justify-center align-center">
+      <v-col cols="12">
         <h1 class="headline primary--text">Projet "En Roue Libre"</h1>
       </v-col>
     </v-row>
-
-    <VideosList class="mb-5" :videos="playlists[0].videos || []"></VideosList>
-
+    <VideosList class="mb-5" :videos="playlists[0].videos"></VideosList>
     <v-row class="align-center my-5 d-flex justify-center">
       <v-col cols="12" md="6">
         <nuxt-link to="/blog">
@@ -68,7 +72,6 @@ export default {
       articles: [],
       videos: [],
       categories: [],
-      playlists: [],
     };
   },
 

@@ -6,16 +6,16 @@
       </v-col>
     </v-row>
     <v-row class="justify-center align-center">
-      <!--  <v-col cols="12">
-        <h1 class="headline primary--text">{{ categories[0]. }}</h1>
+      <v-col cols="12">
+        <h1 class="headline primary--text">Les derniers articles</h1>
       </v-col>
     </v-row>
-    <ArticlesList :articles="categories[0].articles || []"></ArticlesList>
+    <ArticlesList :articles="categories[1].articles || []"></ArticlesList>
     <v-divider class="ma-4 primary"></v-divider>
     <v-row class="justify-center align-center">
       <v-col cols="12">
         <h1 class="headline primary--text">Tout les articles</h1>
-      </v-col> -->
+      </v-col>
     </v-row>
 
     <ArticlesList :articles="categories[0].articles || []"></ArticlesList>

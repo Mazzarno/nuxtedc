@@ -84,13 +84,12 @@
   </v-container>
 </template>
 <script>
-import articlesQuery from "~/apollo/articles.gql";
+
 var moment = require("moment");
 export default {
   data() {
     return {
       api_url: "https://echappee-copro.fr",
-      articles: [],
       moment: moment,
       swiperOption: {
         breakpoints: {
@@ -134,11 +133,9 @@ export default {
       },
     };
   },
-  apollo: {
-    articles: {
-      prefetch: true,
-      query: articlesQuery,
-    },
+  props: {
+    articles: Array,
+    categories: Array,
   },
 };
 </script>

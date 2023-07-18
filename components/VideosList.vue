@@ -40,14 +40,13 @@
 </template>
 <script>
 import { mdiYoutube } from "@mdi/js";
-import videosQuery from "~/apollo/videos.gql";
+
 export default {
   data() {
     return {
       yt_api: "https://www.youtube-nocookie.com/embed/",
       youtube_api: "https://www.youtube.com/watch?v=",
       mdiYoutube,
-      videos: [],
       swiperOption: {
         breakpoints: {
           1500: {
@@ -81,11 +80,9 @@ export default {
       },
     };
   },
-  apollo: {
-    videos: {
-      prefetch: false,
-      query: videosQuery,
-    },
+  props: {
+    videos: Array,
+    playlists: Array,
   },
 };
 </script>

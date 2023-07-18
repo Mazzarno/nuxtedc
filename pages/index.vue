@@ -309,7 +309,7 @@
       <v-col cols="12">
         <h1 class="mt-5 headline primary--text">LE BLOG</h1>
       </v-col>
-      <ArticlesList class="mb-5"></ArticlesList>
+      <ArticlesList :articles="categories[1].articles || []"></ArticlesList>
       <v-row class="align-center d-flex justify-center">
         <v-col cols="10">
           <nuxt-link to="/blog">
@@ -330,12 +330,12 @@
           <h1 class="headline my-5 primary--text">NOTRE VIDÉOTHÈQUE</h1>
         </v-col>
       </v-row>
-      <VideosList class="mb-5"></VideosList>
+      <VideosList class="mb-5" :videos="playlists[1].videos || []"></VideosList>
       <v-row class="align-center my-5 d-flex justify-center">
         <v-col cols="12" md="6">
           <nuxt-link to="/videotheque">
             <v-btn class="ma-5" color="primary"
-              >Voir toutes nos vidéos
+              >Visiter la vidéothèque
               <v-icon class="ml-3">{{ mdiVideo }}</v-icon></v-btn
             ></nuxt-link
           >
